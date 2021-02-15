@@ -31,7 +31,8 @@ const MommysCar = new Car(
 
 console.log("MommysCar:", MommysCar);
 console.log("The radio is ", MommysCar.radioActive);
-console.log("Click the radio is now ", MommysCar.toggleRadio(true))
+MommysCar.toggleRadio(true);
+console.log("Click the radio is now ", MommysCar.radioActive);
 console.log("******************************************");
 
 const DaddysTruck = new Truck(
@@ -48,7 +49,8 @@ const newPickup = ["bread", "butter", "spaghetti", "Jack Daniels", "Coke Zero"];
 console.log("DaddysTruck:", DaddysTruck);
 console.log("Is there a load in the truck? ", DaddysTruck.haulingActive);
 console.log("What's it hauling? ", DaddysTruck.haulLoad);
-console.log("How about now? ", DaddysTruck.updateHaulLoad(newPickup));
+DaddysTruck.updateHaulLoad(newPickup);
+console.log("NEW PICKUP! How about now? ", DaddysTruck.haulLoad);
 console.log("******************************************");
 
 const newTrip = new Plane(
@@ -61,7 +63,8 @@ const newTrip = new Plane(
 );
 
 console.log("newTrip:", newTrip);
-console.log("We are currently in ", newTrip.currentPassCount);
+console.log("We are currently in ", newTrip.currentLocation);
 console.log("Our destination is ", newTrip.destination);
-console.log("REROUTE! Our new destination is ", newTrip.updateDestination("Florida LOL"));
+newTrip.updateDestination("Florida LOL");
+console.log("REROUTE! Our new destination is ", newTrip.destination);
 console.log("******************************************");
