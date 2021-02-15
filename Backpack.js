@@ -14,7 +14,8 @@ class Backpack {
       pocketNum,
       strapLengthL,
       strapLengthR,
-      lidOpen
+      lidOpen,
+      dateAcquired
     ) {
       // Define properties:
       this.name = name;
@@ -26,6 +27,7 @@ class Backpack {
         right: strapLengthR,
       };
       this.lidOpen = lidOpen;
+      this.dateAcquired = dateAcquired;
     }
     // Add methods like normal functions:
     toggleLid(lidStatus) {
