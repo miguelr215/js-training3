@@ -21,3 +21,5 @@ class Car {
         this.color = newColor;
     }
 }
+
+export default Car;
